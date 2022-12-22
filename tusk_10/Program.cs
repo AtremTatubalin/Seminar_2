@@ -11,7 +11,7 @@ int ThirdDigit(int number)
 
 Console.WriteLine("Введите трёхзначное число.");
 
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
 int digit = ThirdDigit(num);
 
 Console.WriteLine($"Вторая цифра числа {num} это {digit}");
