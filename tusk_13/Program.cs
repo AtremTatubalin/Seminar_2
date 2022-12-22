@@ -26,15 +26,32 @@ int ThirdDigit(int num, int count)
     return digit;
 }
 
+Console.WriteLine("Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
 int numberLenght = Size(number);
 
-if (numberLenght <= 2)
+if (numberLenght == 3)
+{
+    int a3 = number % 10;
+    Console.WriteLine($"Третья цифра {a3}");
+}
+else
+{
+    if (numberLenght <= 2)
 {
     Console.WriteLine("Третьей цыфры нет.");
 }
 else
 {
 int ThirdNum = ThirdDigit(number, numberLenght);
-Console.WriteLine(ThirdNum);
+Console.WriteLine($"Третья цифра {ThirdNum}");
+}if (numberLenght <= 2)
+{
+    Console.WriteLine("Третьей цыфры нет.");
+}
+else
+{
+int ThirdNum = ThirdDigit(number, numberLenght);
+Console.WriteLine($"Третья цифра {ThirdNum}");
+}
 }
